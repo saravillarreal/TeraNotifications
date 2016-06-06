@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Login-->
+    <string name="user">User</string>
+    <string name="password">Password</string>
+    <string name="btn_accept">Accept</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="user_empty">The user field is empty.</string>
+    <string name="password_empty">The password field is empty.</string>
+
+
+    <!--Login-->
+</resources>

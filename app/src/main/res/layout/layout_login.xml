@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="100dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/user"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/edit_text_usuario_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/password"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/edit_text_password_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btn_accept_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/btn_accept"
+                android:background="@android:color/white"
+                android:layout_weight="50"
+                />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="#9E9B98"/>
+
+            <Button
+                android:id="@+id/btn_cancel_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/btn_cancel"
+                android:background="@android:color/white"
+                android:layout_weight="50"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
