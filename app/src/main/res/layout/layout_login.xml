@@ -2,15 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_red_light"
+
     >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="#ffffff">
+    </android.support.v7.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="100dp"
+        android:background="@drawable/wallpaper"
         >
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -19,6 +29,7 @@
             android:text="@string/user"
             android:textSize="17sp"
             android:textStyle="bold"
+            android:textColor="@android:color/white"
             />
         <EditText
             android:id="@+id/edit_text_usuario_login"
@@ -26,6 +37,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:singleLine="true"
+            android:textColor="@android:color/white"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -35,6 +47,7 @@
             android:text="@string/password"
             android:textSize="17sp"
             android:textStyle="bold"
+            android:textColor="@android:color/white"
             />
 
         <EditText
@@ -60,6 +73,7 @@
                 android:text="@string/btn_accept"
                 android:background="@android:color/white"
                 android:layout_weight="50"
+                android:textColor="@android:color/black"
                 />
 
             <View
@@ -76,6 +90,7 @@
                 android:text="@string/btn_cancel"
                 android:background="@android:color/white"
                 android:layout_weight="50"
+                android:textColor="@android:color/black"
                 />
         </LinearLayout>
 

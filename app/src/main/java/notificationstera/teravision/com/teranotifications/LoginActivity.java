@@ -8,13 +8,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 
 import notificationstera.teravision.com.teranotifications.util.StringUtil;
 
 /**
  * Created by Sara Villarreal on 6/6/2016.
  */
-public class LoginActivity extends Activity implements View.OnClickListener {
+public class LoginActivity extends AppCompatActivity  implements View.OnClickListener {
     private String mUser, mPassword;
     private  EditText mUserEditText, mPasswordEditText;
     private Button mAcceptButton, mCancelButton;
@@ -23,6 +25,8 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_login);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         mUserEditText = (EditText) findViewById(R.id.edit_text_usuario_login);
         mPasswordEditText = (EditText) findViewById(R.id.edit_text_password_login);
         mAcceptButton = (Button) findViewById(R.id.btn_accept_login);
